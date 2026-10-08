@@ -3,7 +3,7 @@
 class PenombreSyncCanary < Formula
   desc "Tray app keeping local folders in two-way sync with a Penombre server"
   homepage "https://orochibraru.com/penombre/docs/desktop"
-  version "1.8.65-canary.1"
+  version "1.8.65-canary.2"
   license "MIT"
 
   depends_on "rclone"
@@ -13,18 +13,18 @@ class PenombreSyncCanary < Formula
   on_macos do
     on_arm do
       url "https://github.com/orochibraru/penombre/releases/download/v#{version}/penombre-sync-aarch64-apple-darwin.tar.gz"
-      sha256 "df05936d6039a1bad5199162711619e1d20f7844c2761d50750d3cf7af439457"
+      sha256 "c35409eede749642d318335ffc402000e25e1e2586f90bfbf2e9acc5446eb8d5"
     end
     on_intel do
       url "https://github.com/orochibraru/penombre/releases/download/v#{version}/penombre-sync-x86_64-apple-darwin.tar.gz"
-      sha256 "9a2d08e26e81681b4face31aa01ea2f680fe07a9c2de871c16368ef0e9812141"
+      sha256 "80701dfd22e63c29428ed0472565e0a0fbba92646c99ae6b34986813541e3b02"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/orochibraru/penombre/releases/download/v#{version}/penombre-sync-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "a3d3b000f069d93ce582c75be2adac27e7378e94aa02b7f34fc13e57b28973b6"
+      sha256 "498731deb66c3375572991f95bb8f2720f3726c314e29a222ff2ae63cdf81c2a"
     end
   end
 
